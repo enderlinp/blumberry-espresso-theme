@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/*!
+	@theme Blumberry
+	@override-placeholders html, xml, css, sourcecode.js, php
+	@author Ported by enderlinp from jomurgel's Blumberry Theme
+	
+	Colors
+			- #000000 Text
+			- #fefefe Background
+			- #999999 Comments
+			- #003399 Blue
+			- #006699 Aqua
+			- #cc3366 Pink
+			- #669900 Green
+			- #330066 Purple
+			- #993399 Light Purple			
+*/
+@import "syntax-variables.scss";
+
+:document-base {
+	color: $syntax-text-color;
+	background-color: $syntax-background-color;
+	insertion-point-color: $syntax-text-color;
+	selection-background-color: $syntax-selection-color;
+	current-line-background-color: $syntax-current-line-color;
+}
+
+css,
+js,
+php,
+source,
+sourcecode,
+tag,
+constant { 
+	spell-check: disabled; 
+}
+
+tag,
+tag > name { 
+	color: $blue; 
+}
+
+attribute-name, 
+punctuation.definition.tag,
+keyword.control, 
+storage.type { 
+	color: $aqua; 
+}
+
+tag > string.quoted, 
+tag > attribute-with-value > string.quoted,
+tag > string > punctuation,
+string.quoted,
+string.quoted > punctuation,
+constant.numeric { 
+	color: $pink;
+}
+
+comment, 
+comment > punctuation, 
+tag.doctype, tag.doctype > *, 
+tag.doctype > string.quoted {
+	color: $light-gray;
+}
+
+string.quoted > escape {
+	background-color: rgba($pink, 15%);
+}
+
+variable > punctuation,
+operator,
+open-bracket,
+close-bracket {
+	color: $black;
+}
+
+/* CSS */
+css.selector, 
+css.selector entity punctuation, 
+css property-name { 
+	color: $blue; 
+}
+
+css property-value,
+css property-value function name {
+	color: $green; 
+}
+
+css property-value function,
+keyword.css {
+	color: $pink;
+}
+
+css.at-rule selector,
+css.at-rule property-value {
+	color: $purple;
+}
+
+css.at-rule string, 
+css.at-rule string punctuation, 
+media.css > block > punctuation, 
+property-list.css > property-value > punctuation {
+	color: $black;
+}
+
+keyword.important.css {
+	color: $aqua;
+}
+
+/* JS */
+js {
+	color: $light-purple;
+}
+
+js function {
+	color: $blue;
+}
+
+js function name,
+js function.definition name,
+js punctuation {
+	color: $black;
+}
+
+js variable,
+js function[text="$"] {
+	color: $purple;
+}
+
+js keyword.variable {
+	color: $aqua;
+}
+
+/* PHP */
+php,
+php variable.function,
+php function.definition name {
+	color: $purple;
+}
+
+php variable,
+php variable punctuation,
+php string x-accessor,
+php keyword.constant {
+	color: $light-purple;
+}
+
+php comment keyword,
+php delimiter.source, 
+php delimiter.source keyword {
+	color: $light-gray;
+}
+
+php modifier, 
+php keyword.storage.type,
+php definition keyword,
+php keyword {
+	color: $aqua;
+}
+
+php constant.language {
+	color: $green;	
+}

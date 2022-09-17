@@ -1,0 +1,160 @@
+/*!
+	@theme Blumberry
+	@override-placeholders html, xml, css, sourcecode.js, php
+	@author Ported by enderlinp from jomurgel's Blumberry Theme
+
+	Colors
+			- #000000 Text
+			- #fefefe Background
+			- #999999 Comments
+			- #003399 Blue
+			- #006699 Aqua
+			- #cc3366 Pink
+			- #669900 Green
+			- #330066 Purple
+			- #993399 Light Purple			
+*/
+:document-base {
+  color: #000000;
+  background-color: #fefefe;
+  insertion-point-color: #000000;
+  selection-background-color: #b2d7ff;
+  current-line-background-color: #fffeee;
+}
+
+css,
+js,
+php,
+source,
+sourcecode,
+tag,
+constant {
+  spell-check: disabled;
+}
+
+tag,
+tag > name {
+  color: #003399;
+}
+
+attribute-name,
+punctuation.definition.tag,
+keyword.control,
+storage.type {
+  color: #006699;
+}
+
+tag > string.quoted,
+tag > attribute-with-value > string.quoted,
+tag > string > punctuation,
+string.quoted,
+string.quoted > punctuation,
+constant.numeric {
+  color: #cc3366;
+}
+
+comment,
+comment > punctuation,
+tag.doctype, tag.doctype > *,
+tag.doctype > string.quoted {
+  color: #999999;
+}
+
+string.quoted > escape {
+  background-color: rgba(204, 51, 102, 0.15);
+}
+
+variable > punctuation,
+operator,
+open-bracket,
+close-bracket {
+  color: #000000;
+}
+
+/* CSS */
+css.selector,
+css.selector entity punctuation,
+css property-name {
+  color: #003399;
+}
+
+css property-value,
+css property-value function name {
+  color: #669900;
+}
+
+css property-value function,
+keyword.css {
+  color: #cc3366;
+}
+
+css.at-rule selector,
+css.at-rule property-value {
+  color: #330066;
+}
+
+css.at-rule string,
+css.at-rule string punctuation,
+media.css > block > punctuation,
+property-list.css > property-value > punctuation {
+  color: #000000;
+}
+
+keyword.important.css {
+  color: #006699;
+}
+
+/* JS */
+js {
+  color: #993399;
+}
+
+js function {
+  color: #003399;
+}
+
+js function name,
+js function.definition name,
+js punctuation {
+  color: #000000;
+}
+
+js variable,
+js function[text="$"] {
+  color: #330066;
+}
+
+js keyword.variable {
+  color: #006699;
+}
+
+/* PHP */
+php,
+php variable.function,
+php function.definition name {
+  color: #330066;
+}
+
+php variable,
+php variable punctuation,
+php string x-accessor,
+php keyword.constant {
+  color: #993399;
+}
+
+php comment keyword,
+php delimiter.source,
+php delimiter.source keyword {
+  color: #999999;
+}
+
+php modifier,
+php keyword.storage.type,
+php definition keyword,
+php keyword {
+  color: #006699;
+}
+
+php constant.language {
+  color: #669900;
+}
