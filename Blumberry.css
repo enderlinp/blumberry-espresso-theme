@@ -130,9 +130,13 @@ js keyword.variable {
 
 /* PHP */
 php,
-php variable.function,
+php variable.function {
+  color: #330066;
+}
+
 php function.definition name {
   color: #330066;
+  font-weight: bold;
 }
 
 php variable,
