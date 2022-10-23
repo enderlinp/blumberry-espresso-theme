@@ -15,5 +15,5 @@ This version supports HTML, CSS, Javascript and PHP.
 ## PHP Preview
 ![PHP Preview image](./img/php.png?raw=true)
 
-## Licence
-Released under the [MIT Licence](LICENSE).
+## License
+Released under the [MIT License](LICENSE).
